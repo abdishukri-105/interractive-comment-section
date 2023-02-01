@@ -1,14 +1,16 @@
+import plusImage from "../images/icon-plus.svg"
+import MinusImage from "../images/icon-minus.svg"
 const Vote = ({votes}) => {
 
-//   const votes = data.map(dat => {
-//     return <p key={dat}>
-//                {dat.score}
-//            </p>
-//     })
+
 
     return (  
-        // <div>{votes}</div>
-        <div>{votes}</div>
+        
+        <div className="p-2">
+          <img src={plusImage} alt="" className="mb-3 mt-1"/>  
+          <p className="mb-3"> {votes}</p> 
+          <img src={MinusImage} alt="" className="mb-3" />
+        </div>
     );
 }
  

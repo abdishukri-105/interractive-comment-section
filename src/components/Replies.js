@@ -1,8 +1,8 @@
 const Replies = ({content, votes}) => {
     return ( 
         <div>
-{content}
-{votes}
+           {content}
+           {votes}
         </div>
      );
 }

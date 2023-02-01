@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 function App() {
 
   const [data, setData] = useState([])
-
+ 
 
   useEffect(() => {
       fetch("http://localhost:3000/comments")
@@ -17,9 +17,11 @@ function App() {
   },[])
   
 
+
+
   return (
     <div className="App">
-        <CommentCard data={data}/>
+        <CommentCard data={data} />
     </div>
   );
 }
